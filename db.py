@@ -6,6 +6,7 @@ cursor = con.cursor()
 check_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
 
 def create_new_table(framework_name):
+    # 테이블-필드 생성
     try:
         query = "CREATE TABLE "+str(framework_name)+"(id integer primary key autoincrement, function_name text, function_info text);"
         print("created new table. ")
@@ -17,7 +18,8 @@ def create_new_table(framework_name):
     except:
         pass
 
-def create_new_data(framework_name, idx, function_name, function_info):
+def create_new_record(framework_name, idx, function_name, function_info):
+    # 레코드 생성
     try:
         query = "INSERT INTO "+str(framework_name)+" VALUES("+str(idx)+" , "+str(function_name)+" , "+str(function_info)+");"
         print("query : ", query)
@@ -26,7 +28,7 @@ def create_new_data(framework_name, idx, function_name, function_info):
     except:
         pass
 
-def read_data(framework_name):
+def read_record(framework_name):
     try:
         query = "SELECT * FROM "+str(framework_name)+";"
         print("query : ", query)
@@ -42,13 +44,13 @@ def read_data(framework_name):
     # finally:
     #     con.close()
 
-def update_data():
+def update_record():
     pass
 
 def delete_table():
     pass
 
-def delete_data(framework_name, idx, choice_all=None):
+def delete_record(framework_name, idx, choice_all=None):
     if choice_all is not None:
         print("all data deleted...")
         print("-" * 100)
@@ -66,8 +68,8 @@ def close_db():
     con.close()
 
 create_new_table("mxnet")
-create_new_data("mxnet", 1, "'테스트1'", "'테스트11'")
-create_new_data("mxnet", 2, "'테스트2'", "'테스트12'")
-# delete_data("mxnet", 1, choice_all=None)
-read_data("mxnet")
+create_new_record("mxnet", 1, "'테스트1'", "'테스트11'")
+create_new_record("mxnet", 2, "'테스트2'", "'테스트12'")
+# delete_record("mxnet", 1, choice_all=None)
+read_record("mxnet")
 close_db()
