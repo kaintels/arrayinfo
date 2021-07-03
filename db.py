@@ -29,6 +29,7 @@ def create_new_record(framework_name, idx, function_name, function_info):
         pass
 
 def read_record(framework_name):
+    # 레코드 조회
     try:
         query = "SELECT * FROM "+str(framework_name)+";"
         print("query : ", query)
@@ -51,6 +52,7 @@ def delete_table():
     pass
 
 def delete_record(framework_name, idx, choice_all=None):
+    # 레코드 삭제
     if choice_all is not None:
         print("all data deleted...")
         print("-" * 100)
