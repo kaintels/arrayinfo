@@ -11,6 +11,8 @@ array 및 tensor의 manipulation 팁을 담은 저장소입니다.
 ### 테이블 추가 (예: mxnet이라는 라이브러리 테이블 추가)
 `python CRUD.py --action ct --lib_name 'mxnet'`
 
+---
+
 ### 레코드 추가 (예: mxnex의 1번 인덱스에 다음과 같은 정보 추가)
 
 - 문자를 입력할때는 큰따옴표-작은따옴표 순으로 입력되어야 합니다!
@@ -19,10 +21,15 @@ array 및 tensor의 manipulation 팁을 담은 저장소입니다.
 
 ![image](https://user-images.githubusercontent.com/38157496/124503462-940a4780-de00-11eb-8989-154bca85fc8b.png)
 
+---
+
 ### 레코드 조회 (예 : mxnet 테이블의 레코드를 터미널에서 조회)
+
 `python CRUD.py --action rr --lib_name 'mxnet'`
 
 ![image](https://user-images.githubusercontent.com/38157496/124503770-2dd1f480-de01-11eb-97b2-02e87884ebcb.png)
+
+---
 
 ### 레코드 삭제
 
