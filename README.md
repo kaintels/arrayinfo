@@ -8,6 +8,29 @@ array 및 tensor의 manipulation 팁을 담은 저장소입니다.
 
 ![image](https://user-images.githubusercontent.com/38157496/124503341-53aac980-de00-11eb-9498-301b05ffcc14.png)
 
+### 명령어 일람
+
+```
+--action : 어떤 행동(CRUD)을 할지에 대해 입력 (예 : --action ct)
+
+ct : 테이블 생성
+cr : 레코드 생성 (테이블이 먼저 생성되어야 함)
+rr : 레코드 조회
+dr : 레코드 삭제
+
+--lib_name : 라이브러리 이름 (예 : 'mxnet')
+
+--db_tool : 데이터베이스 이름 
+
+--idx : 인덱스 숫자
+
+--f_name : 함수 이름 (예 : "'torch.zeros()'")
+
+--f_info : 함수 정보 (예 : "'모든 요소가 0으로 설정된 텐서를 만듭니다.'")
+
+--del_all : 전체 삭제 : (기본 : None), 숫자, 혹은 문자열 입력시 삭제됨
+```
+
 ### 테이블 추가 (예: mxnet이라는 라이브러리 테이블 추가)
 `python CRUD.py --action ct --lib_name 'mxnet'`
 
