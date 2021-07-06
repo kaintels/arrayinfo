@@ -36,7 +36,7 @@ dr : 레코드 삭제
 
 ---
 
-### 레코드 추가 (예: mxnex의 1번 인덱스에 다음과 같은 정보 추가)
+### 레코드 추가 (예: mxnet의 1번 인덱스에 다음과 같은 정보 추가)
 
 - 문자를 입력할때는 큰따옴표-작은따옴표 순으로 입력되어야 합니다!
 
@@ -62,12 +62,11 @@ dr : 레코드 삭제
 
 ![image](https://user-images.githubusercontent.com/38157496/124503660-f8c5a200-de00-11eb-8860-9a90468f8510.png)
 
-
 - 전체 삭제
 
 `python CRUD.py --action dr --lib_name 'mxnet' --del_all 'y'`
 
-- 주의: 본 명령어는 이슈, PR 등 관리자의 승인을 받은 후 사용해주세요.
+- **주의: 본 명령어는 이슈, PR 등 관리자의 승인을 받은 후 사용해주세요.**
 
 ![image](https://user-images.githubusercontent.com/38157496/124503838-493cff80-de01-11eb-9852-eb70b5f27acd.png)
 
