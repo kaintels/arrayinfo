@@ -14,7 +14,7 @@ array 및 tensor의 manipulation 팁을 담은 저장소입니다.
 --action : 어떤 행동(CRUD)을 할지에 대해 입력 (예 : --action ct)
 
 ct : 테이블 생성
-cr : 레코드 생성 (테이블이 먼저 생성되어야 함)
+cr : 레코드 생성 (사전 조건 : 테이블이 먼저 생성되어야 함)
 rr : 레코드 조회
 dr : 레코드 삭제
 
