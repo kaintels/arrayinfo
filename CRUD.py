@@ -75,6 +75,8 @@ class DBManager(Connector):
         # 레코드 삭제
         self.connect()
         if choice_all is not None:
+            #TODO
+            #new feature required
             print("all data deleted...")
             print("-" * 100)
             query = "DELETE FROM "+str(library_name)+";"
