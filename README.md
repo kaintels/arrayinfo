@@ -1,6 +1,6 @@
 # arrayinfo
-array 및 tensor의 manipulation 팁을 담은 저장소입니다.
 
+array 및 tensor의 manipulation 팁을 담은 저장소입니다.
 
 ## DB 기여 예시
 
@@ -20,7 +20,7 @@ dr : 레코드 삭제
 
 --lib_name : 라이브러리 이름 (예 : 'mxnet')
 
---db_tool : 데이터베이스 이름 
+--db_tool : 데이터베이스 이름 (기본값 :sqlite, 이 인자값은 생략되어도 무방함. 추후 타 DB 플랫폼 적용시 입력될 수 있음)
 
 --idx : 인덱스 숫자
 
@@ -32,6 +32,7 @@ dr : 레코드 삭제
 ```
 
 ### 테이블 추가 (예: mxnet이라는 라이브러리 테이블 추가)
+
 `python CRUD.py --action ct --lib_name 'mxnet'`
 
 ---
@@ -69,5 +70,3 @@ dr : 레코드 삭제
 - **주의: 본 명령어는 이슈, PR 등 관리자의 승인을 받은 후 사용해주세요.**
 
 ![image](https://user-images.githubusercontent.com/38157496/124503838-493cff80-de01-11eb-9852-eb70b5f27acd.png)
-
-
