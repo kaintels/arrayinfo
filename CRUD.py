@@ -94,7 +94,7 @@ class DBManager(Connector):
 manager = DBManager(args.db_tool)
 
 if args.action == "ct":
-    manager.create_new_table()
+    manager.create_new_table(args.lib_name)
 if args.action == "cr":
     manager.create_new_record(args.lib_name, args.idx, args.f_name, args.f_info)
 if args.action == "rr":
