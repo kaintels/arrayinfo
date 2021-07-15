@@ -3,6 +3,8 @@ import argparse
 import time
 import pandas as pd
 
+#TODO 코드 리뷰
+
 def get_args():
     parser = argparse.ArgumentParser(description='CRUD')
     parser.add_argument('--action', type=str, 
