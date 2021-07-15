@@ -42,11 +42,12 @@ class DBManager(Connector):
         self.cursor.execute(query)
         self.con.commit()
 
-    def create_new_record(self, library_name, idx, function_name, function_info):
+    def create_new_record(self, library_name, function_name, function_info):
         # 레코드 생성
         self.connect()
         query = "INSERT INTO "+str(library_name)\
-            +" VALUES("+str(idx)+" , "+str(function_name)\
+            + " (function_name, function_info) "\
+            + "VALUES("+str(function_name)\
             +" , "+str(function_info)+");"
         print("query : ", query)
         self.cursor.execute(query)
@@ -98,7 +99,7 @@ manager = DBManager(args.db_tool)
 if args.action == "ct":
     manager.create_new_table(args.lib_name)
 if args.action == "cr":
-    manager.create_new_record(args.lib_name, args.idx, args.f_name, args.f_info)
+    manager.create_new_record(args.lib_name, args.f_name, args.f_info)
 if args.action == "rr":
     manager.read_record(args.lib_name)
 if args.action == "dr":
