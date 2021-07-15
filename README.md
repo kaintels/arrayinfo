@@ -37,11 +37,11 @@ dr : 레코드 삭제
 
 ---
 
-### 레코드 추가 (예: mxnet의 1번 인덱스에 다음과 같은 정보 추가)
+### 레코드 추가 (예: mxnet에 다음과 같은 정보 추가)
 
 - 문자를 입력할때는 큰따옴표-작은따옴표 순으로 입력되어야 합니다!
 
-`python CRUD.py --action cr --lib_name 'mxnet' --idx 1 --f_name "'테스트입니다'" --f_info "'안녕하세요'"`
+`python CRUD.py --action cr --lib_name 'mxnet' --f_name "'테스트입니다'" --f_info "'안녕하세요'"`
 
 ![image](https://user-images.githubusercontent.com/38157496/124503462-940a4780-de00-11eb-8989-154bca85fc8b.png)
 
