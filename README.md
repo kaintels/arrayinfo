@@ -4,7 +4,7 @@ array 및 tensor의 manipulation 팁을 담은 저장소입니다.
 
 ## 웹 페이지 접속방법
 
-[이곳](kaintels.github.io/arrayinfo/) 으로 접속하면 웹 페이지를 확인 할 수 있습니다.
+[이곳](https://kaintels.github.io/arrayinfo/build/html/index.html) 으로 접속하면 웹 페이지를 확인 할 수 있습니다.
 
 ## DB 기여 예시
 
