@@ -1,27 +1,27 @@
 **************
-일행렬
+일 행렬
 **************
 
 모든 요소가 일(1)로 설정된 텐서를 만듭니다.
 
-Numpy
-''''''''''''''''''''''''''''''''''''''''''
+**Numpy**
+
 .. code-block:: python
    :linenos:
 
    import numpy as np
    np.ones()
 
-Tensorflow 
-''''''''''''''''''''''''''''''''''''''''''
+**Tensorflow**
+
 .. code-block:: python
    :linenos:
 
    import tensorflow as tf
    tf.ones()
 
-Pytorch
-''''''''''''''''''''''''''''''''''''''''''
+**Pytorch**
+
 .. code-block:: python
    :linenos:
 

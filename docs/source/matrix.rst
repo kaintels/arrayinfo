@@ -7,3 +7,4 @@
 
    matrix/ones.rst
    matrix/zeros.rst
+   matrix/identity.rst

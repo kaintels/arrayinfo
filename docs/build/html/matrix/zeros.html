@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>영행렬 &mdash; arrayinfo 1.0.0 문서</title>
+  <title>영 행렬 &mdash; arrayinfo 1.0.0 문서</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="canonical" href="https://kaintels.github.io/arrayinfo/matrix/zeros.html" />
@@ -19,8 +19,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="색인" href="../genindex.html" />
     <link rel="search" title="검색" href="../search.html" />
-    <link rel="next" title="연산" href="../math.html" />
-    <link rel="prev" title="일행렬" href="ones.html" /> 
+    <link rel="next" title="단위 행렬" href="identity.html" />
+    <link rel="prev" title="일 행렬" href="ones.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -40,8 +40,9 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../matrix.html">행렬 조작</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="ones.html">일행렬</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">영행렬</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ones.html">일 행렬</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">영 행렬</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identity.html">단위 행렬</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../math.html">연산</a></li>
@@ -64,7 +65,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../matrix.html">행렬 조작</a> &raquo;</li>
-      <li>영행렬</li>
+      <li>영 행렬</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/matrix/zeros.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -75,15 +76,31 @@
            <div itemprop="articleBody">
              
   <div class="section" id="id1">
-<h1>영행렬<a class="headerlink" href="#id1" title="이 표제에 대한 퍼머링크"></a></h1>
+<h1>영 행렬<a class="headerlink" href="#id1" title="이 표제에 대한 퍼머링크"></a></h1>
+<p>모든 요소가 영으로 설정된 텐서를 만듭니다.</p>
+<p><strong>Numpy</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="lineno">1 </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="lineno">2 </span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Tensorflow</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="lineno">1 </span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+<span class="lineno">2 </span><span class="n">tf</span><span class="o">.</span><span class="n">zeros</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Pytorch</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="lineno">1 </span><span class="kn">import</span> <span class="nn">torch</span>
+<span class="lineno">2 </span><span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">()</span>
+</pre></div>
+</div>
 </div>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="ones.html" class="btn btn-neutral float-left" title="일행렬" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../math.html" class="btn btn-neutral float-right" title="연산" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ones.html" class="btn btn-neutral float-left" title="일 행렬" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="identity.html" class="btn btn-neutral float-right" title="단위 행렬" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
